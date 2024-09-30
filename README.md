@@ -1,4 +1,4 @@
-# SaaSy-Events Database
+# SaaSy-Events-database
 
 Welcome to the **SaaSy-Events Database** repository – where our data dreams take shape! This repository is dedicated to managing all database schemas, tables, and seed data using MySQL.
 
