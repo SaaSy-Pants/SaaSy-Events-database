@@ -39,7 +39,8 @@ create table `eve_tab`(
     `EventDate` date not null,
     `EventTimeStart` time not null,
     `EventTimeEnd` time not null,
-    `TicketsAvb` smallint not null,
+    `GuestsRem` smallint not null,
+    `MaxGuestsPerTicket` smallint default 1,
     `Price` int not null,
     foreign key (`OID`) references ORGANISER.org_tab(oid)
 );
@@ -50,7 +51,7 @@ create table `tick_tab`(
 	`TID` varchar(5) primary key,
 	`EID` varchar(5) not null,
     `UID` varchar(5) not null,
-	`QRLink` varchar(255) not null unique,
+    `NumGuests` int default 1,
     foreign key (`UID`) references USER.user_tab(uid),
     foreign key (`EID`) references EVENTS.eve_tab(eid)
 );
