@@ -9,8 +9,8 @@ create table `user_tab`(
 	`UID` varchar(255) primary key,
     `Name` text not null,
     `Email` varchar(50) not null unique,
+    `Pic_URL` text,
     `PhoneNo` varchar(15) not null unique,
-    `HashedPswd` varchar(255) not null unique,
     `Address` text not null,
     `Age` int not null
 );
@@ -21,8 +21,8 @@ create table `org_tab`(
 	`OID` varchar(255) primary key,
     `Name` text not null,
     `Email` varchar(50) not null unique,
+    `Pic_URL` text,
     `PhoneNo` varchar(15) not null unique,
-    `HashedPswd` varchar(255) not null unique,
     `Address` text not null,
     `Age` int not null
 );

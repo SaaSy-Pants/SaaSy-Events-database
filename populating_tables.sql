@@ -1,21 +1,21 @@
 use `USER`;
-INSERT INTO `user_tab` (`UID`, `Name`, `Email`, `PhoneNo`, `HashedPswd`, `Address`, `Age`)
+INSERT INTO `user_tab` (`UID`, `Name`, `Email`, `Pic_URL`, `PhoneNo`, `Address`, `Age`)
 VALUES
-('U001', 'John Doe', 'johndoe@example.com', '+1234567890', '$2b$12$OaUaypuWIjhd7eO7RsWNyuQoJx0hCJ2dx8.AYx5H1P7RBW3DpJIyS', '123 Main St, City, Country', 30),
-('U002', 'Jane Smith', 'janesmith@example.com', '+0987654321', '$2b$12$rdqS7U54TlThHfs1Rll9CuE8jfq2wK6lNTM6CsWY6098Nr2pDiTmS', '456 Elm St, City, Country', 25),
-('U003', 'Robert Brown', 'robertbrown@example.com', '+1122334455', '$2b$12$/G8ZQQeEdj41WbTfK9MeJ.goNL8hSY62HTf35vHUgUu0/TN2Au1s6', '789 Oak St, City, Country', 28),
-('U004', 'Emily Davis', 'emilydavis@example.com', '+1223344556', '$2b$12$3ldvQwLop/1RqFDKlX0dLeG1Fhdhjw7qPoccjsB4A6znzHUfS80JO', '321 Pine St, City, Country', 35),
-('U005', 'Michael Johnson', 'michaeljohnson@example.com', '+1555666777', '$2b$12$30FFZcNnHm1JMyucEEwwJ.kbH4T9ipMFZGSI.fe1Wv3hp9GAG/yvK', '654 Birch St, City, Country', 40);
+('U001', 'John Doe', 'johndoe@example.com', 'example.com', '+1234567890', '123 Main St, City, Country', 30),
+('U002', 'Jane Smith', 'janesmith@example.com', 'example.com', '+0987654321', '456 Elm St, City, Country', 25),
+('U003', 'Robert Brown', 'robertbrown@example.com', 'example.com', '+1122334455', '789 Oak St, City, Country', 28),
+('U004', 'Emily Davis', 'emilydavis@example.com', 'example.com', '+1223344556', '321 Pine St, City, Country', 35),
+('U005', 'Michael Johnson', 'michaeljohnson@example.com', 'example.com', '+1555666777', '654 Birch St, City, Country', 40);
 select * from user_tab;
 
 use `ORGANISER`;
-INSERT INTO `org_tab` (`OID`, `Name`, `Email`, `PhoneNo`, `HashedPswd`, `Address`, `Age`)
+INSERT INTO `org_tab` (`OID`, `Name`, `Email`, `Pic_URL`, `PhoneNo`, `Address`, `Age`)
 VALUES
-('O001', 'Alice Johnson', 'alice.johnson@example.com', '+1987654321', '$2b$12$W3Nm.HN38Dmhke6GfEvZneiNUM3pjbl6a7D2SGnQXWkhnMIYsn.H6', '789 Maple Ave, Cityville, Country', 28),
-('O002', 'David Smith', 'david.smith@example.com', '+1456789012', '$2b$12$DUJEZnSL1KV4HI5ps3jw/euKk4PzofdrMJGehVfFveXhZG2Ksn7/K', '456 Oak St, Townsville, Country', 34),
-('O003', 'Sophia Garcia', 'sophia.garcia@example.com', '+1357924680', '$2b$12$mkWLSYmE6u3B7CkjiTGx8eSm0OGpS3Gn9AiKd30qP4VsTd.8Ck9c6', '321 Birch St, Villagetown, Country', 22),
-('O004', 'Liam Thompson', 'liam.thompson@example.com', '+1765432109', '$2b$12$nSJ95FoAtbcTaLbdG1qqs.3B.3i6cFc01gI8UgOV4yicArinneYbm', '654 Pine St, Countrytown, Country', 29),
-('O005', 'Emma Brown', 'emma.brown@example.com', '+1098765432', '$2b$12$rObWw3aKivJPhNNUsiiR2OR10lw0.pspE2loYpouWKLDYfRZUeelO', '987 Cedar Ln, Citycenter, Country', 31);
+('O001', 'Alice Johnson', 'alice.johnson@example.com', 'example.com', '+1987654321', '789 Maple Ave, Cityville, Country', 28),
+('O002', 'David Smith', 'david.smith@example.com', 'example.com', '+1456789012', '456 Oak St, Townsville, Country', 34),
+('O003', 'Sophia Garcia', 'sophia.garcia@example.com', 'example.com', '+1357924680', '321 Birch St, Villagetown, Country', 22),
+('O004', 'Liam Thompson', 'liam.thompson@example.com', 'example.com', '+1765432109', '654 Pine St, Countrytown, Country', 29),
+('O005', 'Emma Brown', 'emma.brown@example.com', 'example.com', '+1098765432', '987 Cedar Ln, Citycenter, Country', 31);
 select * from org_tab;
 
 use `events`;
